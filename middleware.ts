@@ -7,7 +7,9 @@ export default authMiddleware({
   ] ,
   ignoredRoutes:[
     'api/webhook/clerk','api/webhook/stripe' ,'api/uploadthing'
-  ],debug:true
+  ],debug:true,
+ afterAuth:false,
+ beforeAuth:false,
 });
  
 export const config = {
