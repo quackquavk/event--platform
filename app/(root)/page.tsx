@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import CreateEvent from "./events/create/page";
 
 export default function Home() {
   return (
@@ -37,7 +38,7 @@ export default function Home() {
           search
           category filter
         </div>
-        
+        <CreateEvent />
       </section>
     </>
   );
