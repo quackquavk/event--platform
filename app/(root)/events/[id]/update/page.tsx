@@ -6,6 +6,11 @@ const UpdateEvent = () => {
     const {sessionClaims} = auth();
 
     const userId = sessionClaims?.userId as string;
+
+    if(!sessionClaims){
+      console.log('Session claims not found')
+    }
+
   return (
     <>
       <section className="bg-primary-50 bg-dotted-pattern bg-cover py-5 md:py-10 bg-center">
